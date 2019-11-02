@@ -11,7 +11,7 @@ module.exports = class Person {
   join(hogwartsHouse) {
       if (this.isWizard === true){
           this.hogwartsHouse = hogwartsHouse
-          hogwartsHouse.members.push(this) 
+          hogwartsHouse.members.push(this.name) 
           return true;
       } else {
           console.log( this.name + ' :Entrance just with magic membercard!')
